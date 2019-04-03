@@ -3,7 +3,6 @@
 ## Build new image from DOCKERFILE
 
 ```bash
-cd /c/Users/dpb6/Downloads/repos/dockercmdpython #go to local dir
 docker build -t hi .  # Create image using this directory's Dockerfile
 ```
 
@@ -11,6 +10,7 @@ docker build -t hi .  # Create image using this directory's Dockerfile
 
 ```bash
 docker run --rm -it hi # run with default CMD from DOCKERFILE
+docker run --rm -it hi hello --help # show help
 docker run --rm -it hi hello --name David --count 10 # run specified CMD with arguments
 ```
 
