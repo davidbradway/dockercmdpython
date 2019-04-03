@@ -8,4 +8,4 @@ WORKDIR /app
 RUN pip install -e .
 
 # Run command when the container launches
-CMD ["hello", "--name", "David"]
+CMD ["hello", "--help"]
