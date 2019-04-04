@@ -1,8 +1,13 @@
 # Python Command Line App Using Click via Alpine Docker Image
 
+
+- Click allows one to make nice Python CMD apps, but you would need to install it in a virtualenv and activate it to use
+- So I created a using a Python 3 Alpine Docker Image https://github.com/davidbradway/dockercmdpython
+- So now you just create a Docker image and run the command line apps in a container
+
 ## Build new image from DOCKERFILE
 
-- name with a tag
+- give it a tag "hi"
 
 ```bash
 docker build -t hi .  # Create image using this directory's Dockerfile
@@ -10,9 +15,9 @@ docker build -t hi .  # Create image using this directory's Dockerfile
 
 ## Run container
 
-- Remove container when it finishes.
-- Run in interactive mode
-- Run default or other CMD
+- Remove container when it finishes
+- Run interactive, tty mode
+- Run default or other command
 - Optionally, provide arguments
 
 ```bash
